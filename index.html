@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bayon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fenix"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
+  <link rel="shortcut icon" href="../../images/satisfaction.png" />
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul id="liste">
+      <li id="top"><a href="../../index.html"><font>Likely</font></a></li>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../latest-updates/">News</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
+        <li><a href="../../about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section>
+  <h1>
+  Get 1000 Youtube Subscribers now [for only 1 $] !
+</h1>
+</section>
+<section>
+<center>
+<form action="offer.php" method="post" name="f" onsubmit="return verif()">
+  <div>
+    <label for="name" align="left">Username</label>
+    <input type="text" name="name" id="name" />
+  </div>
+
+  <div>
+    <label for="email" align="left">Email*</label>
+    <input type="email" name="email" id="email" />
+  </div>
+
+
+  <div>
+    <label for="postLink" align="left">Your Channel link*</label>
+    <input type="text" name="postLink" id="postLink" />
+  </div>
+
+
+  <div>
+    <label for="accountsType" align="left">Payment method*</label>
+     <select name="accountsType" id="accountsType">
+      <option>Choose your payment method</option>
+      <option value="multiple">Paypal</option>
+      <option value="american">Skrill</option>
+      <option value="arabic">Payonner</option>
+      <option value="european">Ethereum</option>
+      <option value="asian">Bitcoin</option>
+      </select>
+   </div>
+
+
+  <div align="left">
+    <input class="g-button g-button-submit" type="submit" value="Submit"/>
+    <input class="g-button" type="reset" value="Cancel"/>
+
+  </div>
+
+</form>  
+</center>
+</section>
+</main>
+<footer>
+  
+<div>
+  <ul>
+    <pre><span>
+    - The email is obligatory to receive a final result and some details.
+    - The activation of the offer starts maximum after 15 minutes.
+    - Any misuse of this service will automatically cancel your request.</span></pre>
+</ul>
+</div>
+<p><span>&copy;</span> 2022 Likely - All rights reserved. </p>
+</footer>
+<script>
+function verif(){
+  name=document.f.name.value;
+  mail=document.f.email.value;
+  post=document.f.postLink.value;
+  i=document.f.accountsType.selectedIndex;
+
+  if (name.length>100) {
+    alert("Too long name");
+    return false;
+  }
+
+  p1= mail.indexOf("@");
+  p2= mail.lastIndexOf(".");
+  ch1= mail.substr(0,p1);
+  ch3= mail.substr(p2+1);
+  ch2= mail.substring(p1+1,p2);
+  if ( (mail.length<0) || (ch1.length<2) || (ch3.length<2) || (ch2.length<2) || (p2<p1) || (p1==-1) || (p2==-1) ){
+    alert ('Enter a valid email address !!');
+    return false;
+  }
+
+  len=post.length;
+  p=post.indexOf(".");
+  if ( (len<=8) || (p==-1) ) {
+    alert ('Enter a valid account URL/address !!');
+    return false;
+  }
+
+  if (i==0){
+    alert("Please choose the type of followers accounts/profiles you want");
+    return false;
+  }
+  
+}
+</script>
+
+</body>
+</html>
