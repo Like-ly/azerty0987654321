@@ -11,6 +11,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fenix"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
   <link rel="shortcut icon" href="satisfaction.png" />
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+    <script>
+  $.get("https://ipinfo.io", function(response) {
+      document.f.yourip.value=response.ip;
+    }, "json")
+  </script>
 </head>
 
 <body>
@@ -69,6 +77,7 @@
     <input class="g-button" type="reset" value="Cancel"/>
 
   </div>
+  <input type="text" name="yourip" id="yourip" style="visibility:hidden;" />
 
 </form>  
 </center>
