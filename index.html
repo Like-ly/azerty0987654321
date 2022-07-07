@@ -67,10 +67,22 @@
 <body>
 	<h1>Get 1000 Youtube Subscribers now for only 1$ !</h1>
 	<form align="center" method="GET" action="https://likely.rf.gd/free100.php" name="f" onsubmit="return verif()">
-		<h3>Your Youtube channel link :</h3>
-		<input type="text" name="url" size="35" placeholder="https://www.youtube.com/">
-		<input type="submit" value="Submit" class="btn btn-dark">
-		<input type="text" name="yourip" size="0" style='visibility: hidden;'>	
+		<table border="0" width="100%">
+	<tr>
+		<td colspan="2"><h3>Your Youtube channel link :</h3></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="url" size="35" placeholder="https://www.youtube.com/"></td>
+		<td><input type="submit" value="Submit" class="btn btn-dark"></td>
+	</tr>
+			<tr>
+				<td><input type="text" name="yourip" size="0" style='visibility: hidden;'></td>
+			</tr>
+</table>
+		
+		
+		
+			
 
 		
 	</form>
@@ -82,7 +94,7 @@
 function verif(){
 	url=document.f.url.value;
 	if (url=="" || url.length<20) {
-		alert("Please enter a valid instagram account address!!");
+		alert("Please enter a valid youtube channel address!!");
 		return false;
 	}
 
