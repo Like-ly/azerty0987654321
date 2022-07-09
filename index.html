@@ -43,7 +43,7 @@
 <center>
 <form action="https://www.likely.rf.gd/offer.php" method="GET" name="f" onsubmit="return verif()">
   <div>
-    <label for="name" align="left">Username</label>
+    <label for="username" align="left">Username</label>
     <input type="text" name="username" id="username" />
   </div>
 
@@ -76,7 +76,7 @@
   <ul>
     <pre><span>
     - The email is obligatory to receive a final result and some details.
-    - The activation of the offer starts maximum after 15 minutes.
+    - The activation of the offer starts maximum after 1 hour.
     - Any misuse of this service will automatically cancel your request.</span></pre>
 </ul>
 </div>
@@ -84,13 +84,12 @@
 </footer>
 <script>
 function verif(){
-  name=document.f.name.value;
+  name=document.f.username.value;
   mail=document.f.email.value;
-  post=document.f.postLink.value;
-  i=document.f.accountsType.selectedIndex;
+  post=document.f.chlink.value;
 
   if (name.length>100) {
-    alert("Too long name");
+    alert("Too long Username");
     return false;
   }
 
@@ -107,12 +106,7 @@ function verif(){
   len=post.length;
   p=post.indexOf(".");
   if ( (len<=8) || (p==-1) ) {
-    alert ('Enter a valid account URL/address !!');
-    return false;
-  }
-
-  if (i==0){
-    alert("Please choose the type of followers accounts/profiles you want");
+    alert ('Enter a valid channel URL/address !!');
     return false;
   }
   
