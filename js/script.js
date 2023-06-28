@@ -1,6 +1,6 @@
 function CHG(){
 	var L = ["likely.rf.gd", "likely.42web.io", "likely.000.pe", "likely.free.nf"];
-	var links = document.getElementsById("idL");
+	var links = document.getElementById("idL");
   	var randomIndex = Math.floor(Math.random() * L.length);
   	var randomLink = L[randomIndex];
 
