@@ -198,7 +198,7 @@ nav ul{
 nav li{
     margin-top: 0.5%;
     float: left;
-    width: 20%; 
+    width: 16.6666666667%; 
     text-align: center; 
     font-family: Fenix;
     font-size: 150%;
@@ -213,14 +213,11 @@ nav ul::after{
 }
 
 nav a{
-
     display: block;  
     text-decoration: none;
     color: white;
     border-bottom: 2px solid transparent; 
     padding: 12px 0px; 
-
-
 }
 
 nav a:hover{
