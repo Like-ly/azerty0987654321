@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="monetag" content="05eb04d8c9eb712a3e447f6accc0ab05">
+	<title>Likely - Get Likes & Subscribers & Followers For Free!</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia Serif Libre">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fenix">
+  <link rel="shortcut icon" href="satisfaction.png" />
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="CHG(); return false;">
+<header>
+	<nav>
+		<ul id="liste">
+      <li id="top"><a href="https://www.likely.eu.org/"><font>Likely</font></a></li>
+      <li><a href="https://www.likely.eu.org/">Home</a></li>
+      <li><a href="https://www.likely.eu.org/policy.html">Privacy Policy</a></li>
+      <li><a href="http://likely.freecluster.eu/">Contact</a></li>
+      <li><a href="https://www.likely.eu.org/terms.html">Terms of service</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+	</nav>
+</header>	
+	<main>
+	<h1><a>Facebook account generator</a></h1>
+	<form action="" name="f" method="POST" autocomplete="">
+
+  <div>
+    <label for="email" align="left">Email <small>(optional)</small></label>
+    <input type="email" name="email" id="email" />
+  </div>
+
+
+  <div>
+    <label for="InstaU" align="left">Instagram account* <small>(Link or Username)</small></label>
+    <input type="text" name="InstaU" id="InstaU" minlength="3" required>
+  </div>
+
+  <div align="left">
+    <input class="g-button g-button-submit" name="instaB" id="instaB" type="submit" value="Submit"/>
+    <input class="g-button" type="reset" value="Cancel"/>
+
+  </div>
+
+</form> 
+</main>
+<script>
+function CHG(){
+	var L = ["likely.rf.gd", "likely.42web.io", "likely.000.pe", "likely.free.nf"];
+	var links = document.getElementsByClassName("idL");
+  	var randomIndex = Math.floor(Math.random() * L.length);
+  	var randomLink = L[randomIndex];
+
+  	for (var i = 0; i < links.length; i++) {
+    		var href = links[i].getAttribute("href");
+    		var newHref = href.replace("likely.rf.gd", randomLink);
+    		links[i].setAttribute("href", newHref);
+  	}
+}
+</script>
+</body>
+</html>
