@@ -222,7 +222,7 @@ function CHG(){
 }
 
 function VSelect() {
-  if (document.f.type.selectedIndex==0) {
+  if (document.f.day.selectedIndex==0 || document.f.month.selectedIndex==0 || document.f.year.selectedIndex==0) {
     alert('choisir le type de reclamation');
     return false;
   }
