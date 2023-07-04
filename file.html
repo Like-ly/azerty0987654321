@@ -222,24 +222,11 @@ function CHG(){
 }
 
 function VSelect() {
-  var selectElements = document.getElementsByTagName('select');
-  var selectValeur = false;
-
-  for (var i = 0; i < selectElements.length; i++) {
-    if (selectElements[i].value !== '') {
-      selectValeur = true;
-      break;
-    }
-  }
-
-  if (!selectValeur) {
-    alert('Veuillez sélectionner une valeur dans au moins l\'une des listes déroulantes.');
+  if (document.f.type.selectedIndex==0) {
+    alert('choisir le type de reclamation');
     return false;
   }
-
-  // Autres opérations à effectuer si une sélection a été faite
-
-  return true; // Soumission du formulaire
+  return true;
 }
 
 </script>
