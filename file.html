@@ -27,13 +27,16 @@
     </ul>
 	</nav>
 </header>	
-	<main>
+<main>
 	<h1><a>Facebook account generator</a></h1>
-	<form action="" name="f" method="POST" autocomplete="">
-
+<center>
+<form action="" name="f" method="POST" autocomplete="">
   <div>
-    <label for="email" align="left">Email <small>(optional)</small></label>
-    <input type="email" name="email" id="email" />
+    <label for="fn" align="left">First name <small>(optional)</small></label>
+    <input type="text" name="fn" id="fn" required>
+
+    <label for="sn" align="left">Surname <small>(optional)</small></label>
+    <input type="text" name="sn" id="sn" required>	
   </div>
 
 
@@ -47,8 +50,8 @@
     <input class="g-button" type="reset" value="Cancel"/>
 
   </div>
-
-</form> 
+</form>
+</center>
 </main>
 <script>
 function CHG(){
